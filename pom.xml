@@ -11,11 +11,11 @@
 	<groupId>br.mil.mar.amrj</groupId>
 	<artifactId>dashboard-rest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>dashboardInfraApi</name>
+	<description>Api para dashboard de infraestrutura</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>
