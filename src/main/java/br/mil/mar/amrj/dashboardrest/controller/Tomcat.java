@@ -16,7 +16,7 @@ public class Tomcat {
 
 	@GetMapping("list")
 	public ResponseEntity<Flux<String>> list() {
-		WebClient webClient = WebClient.builder().baseUrl("http://10.1.32.181:8080")
+		WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080")
 				.defaultHeader(HttpHeaders.USER_AGENT, "Tomcat").build();
 
 		Flux<String> bodyToFlux = webClient.get().uri("/manager/text/list")
