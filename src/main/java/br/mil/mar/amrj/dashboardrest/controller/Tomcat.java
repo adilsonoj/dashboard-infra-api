@@ -15,6 +15,7 @@ import reactor.core.publisher.Flux;
 public class Tomcat {
 
 	@GetMapping("list")
+	@ResponseJson
 	public ResponseEntity<Flux<String>> list() {
 		WebClient webClient = WebClient.builder().baseUrl("http://10.1.32.181:8080")
 				.defaultHeader(HttpHeaders.USER_AGENT, "Tomcat").build();
